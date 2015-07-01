@@ -1,0 +1,76 @@
+Sample
+======
+
+Sample is a simple GTK+ application template written in vala.
+
+The goal of this project, is to provide an almost complete skeleton for a future development.
+It uses common features in order to be a goob base to a desktop application.
+
+The build process uses automake, common features and a french license (CeCILL) to give an example of gresources file and custom license in a Gtk.AboutDialog.
+
+Features
+--------
+
+The project uses automake, GTK+ attributes, gettext, custom application icon, desktop file and Microsoft Windows support
+
+Dependencies
+------------
+
+ * Automake 1.12 or later
+ * GTK+ 3.12 or later
+ * GLib 2.38 or later
+ * vala compiler
+ * ...
+
+Project folder structure
+------------------------
+
+```
+$ tree
+.
+├── AUTHORS
+├── autogen.sh
+├── ChangeLog
+├── configure.ac
+├── COPYING
+├── data
+│   ├── icons
+│   │   ├── hicolor_apps_16x16_sample.png
+│   │   ├── hicolor_apps_22x22_sample.png
+│   │   ├── hicolor_apps_24x24_sample.png
+│   │   ├── hicolor_apps_256x256_sample.png
+│   │   ├── hicolor_apps_32x32_sample.png
+│   │   ├── hicolor_apps_48x48_sample.png
+│   │   ├── hicolor_apps_scalable_sample-symbolic.svg
+│   │   ├── Makefile.am
+│   │   └── sample.svg
+│   ├── LICENCE
+│   ├── Makefile.am
+│   ├── sample.desktop.in
+│   ├── sample.gresource.xml
+│   └── ui
+│       ├── app-window.ui
+│       └── menus.ui
+├── git.mk
+├── INSTALL
+├── Makefile.am
+├── NEWS
+├── po
+│   ├── fr.po
+│   ├── LINGUAS
+│   ├── POTFILES.in
+│   └── POTFILES.skip
+├── README
+└── src
+    ├── config.vapi
+    ├── main.vala
+    ├── Makefile.am
+    ├── sample-app.vala
+    └── sample-app-window.vala
+```
+
+You can find (even on gnome's git repository) diffrents structures. Some puts icons' content into a `pixmaps`
+folder on the same level as `data` and/or create the icons theme hierarchy with a `Makefile.am` on each
+folders, others move the content of `data` into the `src` dir, ...
+
+It will depends on how many sources files, icons, etc. you have.

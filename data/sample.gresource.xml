@@ -1,0 +1,9 @@
+<?xml version="1.0" charset="UTF-8" ?>
+<gresources>
+  <gresource prefix="/org/ldev/gtk/Sample">
+    <file>icons/sample.svg</file>
+    <file>LICENCE</file>
+    <file alias="menu.ui" preprocess="xml-stripblanks">ui/menus.ui</file>
+    <file preprocess="xml-stripblanks">ui/app-window.ui</file>
+  </gresource>
+</gresources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <template class="SampleAppWindow" parent="GtkApplicationWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Sample</property>
+    <property name="default_width">500</property>
+    <property name="default_height">300</property>
+    <property name="icon_name">sample</property>
+    <property name="show_menubar">False</property>
+    <child>
+      <object class="GtkButton" id="test_button">
+        <property name="label" translatable="yes">Click me !</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+        <signal name="clicked" handler="on_test_button_clicked" swapped="no"/>
+      </object>
+    </child>
+  </template>
+  <object class="GtkMenuButton" id="menu_button">
+    <property name="visible">True</property>
+    <property name="can_focus">True</property>
+    <property name="receives_default">True</property>
+    <child>
+      <object class="GtkImage" id="menu-icon">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="icon_name">open-menu-symbolic</property>
+      </object>
+    </child>
+  </object>
+</interface>

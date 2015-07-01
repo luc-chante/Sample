@@ -1,0 +1,7 @@
+0.1.10
+======
+
+  * simple GTK+3 application exemple
+  * gettext support
+  * custom application icon
+  * desktop file

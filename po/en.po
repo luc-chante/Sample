@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sample\n"
+"POT-Creation-Date: 2015-07-01 22:34+0100\n"
+"PO-Revision-Date: 2015-07-01 22:36+0100\n"
+"Last-Translator: Luc Chante <luc.chante@gmail.com>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: src\n"
+"X-Poedit-SearchPath-1: data\n"
+"X-Poedit-SearchPathExcluded-0: data/icons\n"
+
+#: data/ui/app-window.ui:7 src/main.vala:11
+msgid "Sample"
+msgstr "Sample"
+
+#: data/ui/app-window.ui:14
+msgid "Click me !"
+msgstr "Click me !"
+
+#: data/ui/menus.ui:7
+msgid "Preferences"
+msgstr "Preferences"
+
+#: data/ui/menus.ui:13
+msgid "About"
+msgstr "About"
+
+#: data/ui/menus.ui:17
+msgid "Quit"
+msgstr "Quit"
+
+#: data/ui/menus.ui:25
+msgid "Reset"
+msgstr "Reset"
+
+#: src/sample-app.vala:51
+msgid "A GNOME 3 application sample"
+msgstr "A GNOME 3 application sample"

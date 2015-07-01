@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Sample
+_Comment=A GNOME 3 application sample
+_Keywords=Example;GTK;vala
+Exec=sample
+Icon=sample
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;GNOME;
