@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Sample\n"
+"Project-Id-Version: Vala Template\n"
 "POT-Creation-Date: 2015-07-01 22:34+0100\n"
 "PO-Revision-Date: 2015-07-01 22:34+0100\n"
 "Last-Translator: Luc Chante <luc.chante@gmail.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: data/icons\n"
 
 #: data/ui/app-window.ui:7 src/main.vala:11
-msgid "Sample"
+msgid "Vala Template"
 msgstr "Exemple"
 
 #: data/ui/app-window.ui:14

@@ -8,13 +8,13 @@ public int main (string[] args) {
     Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
     Intl.textdomain (Config.GETTEXT_PACKAGE);
 	GLib.Environment.set_prgname(Config.PACKAGE_NAME);
-    GLib.Environment.set_application_name (_("Sample"));
+    GLib.Environment.set_application_name (_("Vala Template"));
 
 	GLib.message("Initializing with Gtk+ version %u.%u.%u.",
              Gtk.get_major_version (),
              Gtk.get_minor_version (),
              Gtk.get_micro_version ());
 	
-	var app = new Sample.App ();
+	var app = new ValaTemplate.App ();
 	return app.run (args);
 }

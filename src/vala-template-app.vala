@@ -1,9 +1,9 @@
 /*
- * sample-app.vala
+ * vala-template-app.vala
  * Copyright (C) 2015 Luc Chante
  *
  */
-internal class Sample.App : Gtk.Application {
+internal class ValaTemplate.App : Gtk.Application {
 
 	private const ActionEntry[] app_entries =
     {
@@ -14,7 +14,7 @@ internal class Sample.App : Gtk.Application {
 	 
     // Constructor
     public App () {
-        Object (application_id: "org.ldev.gtk.Sample",
+        Object (application_id: "org.ldev.gtk.ValaTemplate",
                 flags: ApplicationFlags.FLAGS_NONE);
     }
 
@@ -25,7 +25,7 @@ internal class Sample.App : Gtk.Application {
 		
 		try {
 			Gtk.Builder builder = new Gtk.Builder ();
-			builder.add_from_resource ("/org/ldev/gtk/Sample/menu.ui");
+			builder.add_from_resource ("/org/ldev/gtk/ValaTemplate/menu.ui");
 			MenuModel menu = builder.get_object ("app-menu") as MenuModel;
 			set_app_menu (menu);
 		}
@@ -36,7 +36,7 @@ internal class Sample.App : Gtk.Application {
      
     public override void activate () {
 		if (active_window == null) {
-			var window = new Sample.AppWindow (this);
+			var window = new ValaTemplate.AppWindow (this);
 			window.present ();
 		}
 	}
@@ -44,15 +44,15 @@ internal class Sample.App : Gtk.Application {
 	private void about () {
 		try {
 			string[] authors = { "Luc Chante" };
-		    Bytes bytes = resources_lookup_data ("/org/ldev/gtk/Sample/LICENCE", ResourceLookupFlags.NONE);
+		    Bytes bytes = resources_lookup_data ("/org/ldev/gtk/ValaTemplate/LICENCE", ResourceLookupFlags.NONE);
 			string license = (string) bytes.get_data ();
 		    Gtk.show_about_dialog (active_window,
 		                       "authors", authors,
-		                       "comments", _("A GNOME 3 application sample"),
+		                       "comments", _("A GNOME 3 template application"),
 		                       "copyright", "Copyright (C) 2015 Luc Chante",
 		                       "license-type", Gtk.License.CUSTOM,
 							   "license", license,
-		                       "logo-icon-name", "sample",
+		                       "logo-icon-name", "vala-template",
 		                       "version", Config.VERSION,
 		                       "website", Config.PACKAGE_URL,
 		                       "wrap-license", false);

@@ -1,3 +1,3 @@
 src/main.vala
-src/sample-app.vala
-src/sample-app-window.vala
+src/vala-template-app.vala
+src/vala-template-app-window.vala

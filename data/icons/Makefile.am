@@ -2,16 +2,16 @@ public_icons_themes = \
 	hicolor
 
 public_icons = \
-	hicolor_apps_16x16_sample.png \
-	hicolor_apps_22x22_sample.png \
-	hicolor_apps_24x24_sample.png \
-	hicolor_apps_32x32_sample.png \
-	hicolor_apps_48x48_sample.png \
-	hicolor_apps_256x256_sample.png \
-	hicolor_apps_scalable_sample-symbolic.svg
+	hicolor_apps_16x16_vala-template.png \
+	hicolor_apps_22x22_vala-template.png \
+	hicolor_apps_24x24_vala-template.png \
+	hicolor_apps_32x32_vala-template.png \
+	hicolor_apps_48x48_vala-template.png \
+	hicolor_apps_256x256_vala-template.png \
+	hicolor_apps_scalable_vala-template-symbolic.svg
 
 noinst_DATA = \
-	sample.svg
+	vala-template.svg
 
 EXTRA_DIST = \
 	$(public_icons) \

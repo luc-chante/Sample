@@ -1,10 +1,9 @@
-dnl -*- mode: m4 -*-
 AC_INIT(
-  [Sample],
+  [ValaTemplate],
   [1.0],
-  [http://github.com/luc-chante/Sample/issues],
-  [sample],
-  [http://github.com/luc-chante/Sample])
+  [http://github.com/luc-chante/ValaTemplate/issues],
+  [vala-template],
+  [http://github.com/luc-chante/ValaTemplate])
 
 AC_CONFIG_HEADERS([config.h])
 
@@ -45,7 +44,7 @@ dnl i18n support
 IT_PROG_INTLTOOL(0.40.0)
 
 GETTEXT_PACKAGE=AC_PACKAGE_TARNAME
-AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The name of the gettext domain])
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [The name of the gettext domain])
 AC_SUBST(GETTEXT_PACKAGE)
 AM_GNU_GETTEXT_VERSION([1.11])
 AM_GLIB_GNU_GETTEXT
@@ -56,7 +55,7 @@ AC_PATH_PROG(GLIB_COMPILE_RESOURCES, glib-compile-resources)
 dnl Check for vala
 AM_PROG_VALAC([0.10.0])
 
-PKG_CHECK_MODULES(SAMPLE, [
+PKG_CHECK_MODULES(VALA_TEMPLATE, [
   gtk+-3.0 >= 3.10.0
   glib-2.0 >= 2.38.0
   gio-2.0
@@ -73,7 +72,7 @@ AC_OUTPUT([
 
 AC_MSG_NOTICE([
 
-        Sample $VERSION
+        Vala Template $VERSION
         ============
 
         prefix:          ${prefix}

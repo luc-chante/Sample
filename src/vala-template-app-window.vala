@@ -1,10 +1,10 @@
 /*
- * sample-app-window.vala
+ * vala-template-app-window.vala
  * Copyright (C) 2015 Luc Chante
  *
  */
-[GtkTemplate (ui = "/org/ldev/gtk/Sample/ui/app-window.ui")]
-internal class Sample.AppWindow : Gtk.ApplicationWindow {
+[GtkTemplate (ui = "/org/ldev/gtk/ValaTemplate/ui/app-window.ui")]
+internal class ValaTemplate.AppWindow : Gtk.ApplicationWindow {
 
 	private const ActionEntry[] window_entries =
     {
@@ -33,7 +33,7 @@ internal class Sample.AppWindow : Gtk.ApplicationWindow {
 
 		try {
 			Gtk.Builder builder = new Gtk.Builder ();
-			builder.add_from_resource ("/org/ldev/gtk/Sample/menu.ui");
+			builder.add_from_resource ("/org/ldev/gtk/ValaTemplate/menu.ui");
 			MenuModel menu = builder.get_object ("win-menu") as MenuModel;
 
 			menu_button.menu_model = menu;

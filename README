@@ -1,7 +1,7 @@
-Sample
-======
+Vala Template
+==============
 
-Sample is a simple GTK+ application template written in vala.
+Vala Template is a simple GTK+ application template written in vala.
 
 The goal of this project, is to provide an almost complete skeleton for a future development.
 It uses common features in order to be a goob base to a desktop application.
@@ -17,7 +17,7 @@ Dependencies
 ------------
 
  * Automake 1.12 or later
- * GTK+ 3.12 or later
+ * GTK+ 3.10 or later
  * GLib 2.38 or later
  * vala compiler
  * ...
@@ -35,19 +35,19 @@ $ tree
 ├── COPYING
 ├── data
 │   ├── icons
-│   │   ├── hicolor_apps_16x16_sample.png
-│   │   ├── hicolor_apps_22x22_sample.png
-│   │   ├── hicolor_apps_24x24_sample.png
-│   │   ├── hicolor_apps_256x256_sample.png
-│   │   ├── hicolor_apps_32x32_sample.png
-│   │   ├── hicolor_apps_48x48_sample.png
-│   │   ├── hicolor_apps_scalable_sample-symbolic.svg
+│   │   ├── hicolor_apps_16x16_vala-template.png
+│   │   ├── hicolor_apps_22x22_vala-template.png
+│   │   ├── hicolor_apps_24x24_vala-template.png
+│   │   ├── hicolor_apps_256x256_vala-template.png
+│   │   ├── hicolor_apps_32x32_vala-template.png
+│   │   ├── hicolor_apps_48x48_vala-template.png
+│   │   ├── hicolor_apps_scalable_vala-template-symbolic.svg
 │   │   ├── Makefile.am
-│   │   └── sample.svg
+│   │   └── vala-template.svg
 │   ├── LICENCE
 │   ├── Makefile.am
-│   ├── sample.desktop.in
-│   ├── sample.gresource.xml
+│   ├── vala-template.desktop.in
+│   ├── vala-template.gresource.xml
 │   └── ui
 │       ├── app-window.ui
 │       └── menus.ui
@@ -65,8 +65,8 @@ $ tree
     ├── config.vapi
     ├── main.vala
     ├── Makefile.am
-    ├── sample-app.vala
-    └── sample-app-window.vala
+    ├── vala-template-app.vala
+    └── vala-template-app-window.vala
 ```
 
 You can find (even on gnome's git repository) diffrents structures. Some puts icons' content into a `pixmaps`

@@ -1,3 +1,3 @@
 src/main.c
-src/sample-app.c
-src/sample-app-window.c
+src/vala-template-app.c
+src/vala-template-app-window.c
